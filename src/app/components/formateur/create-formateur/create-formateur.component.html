@@ -1,0 +1,29 @@
+<div class="login-box">
+  <div class="signin topline">
+
+  <div id="box">
+ <h1> Ajouter un formateur </h1>
+<form #addForm="ngForm" (ngSubmit)="onAddFormateur(addForm)">
+<div class="row">
+<div class="col">
+<label  class="col-form-label col-form-label-lg">Nom</label>
+<input type="text"class="form-control form-control-lg"  ngModel name="nom" id="" placeholder="nom.."> <br>
+</div>
+<div class="col">
+<label class="col-form-label col-form-label-lg"> prenom</label>
+<input type="text"class="form-control form-control-lg"  ngModel name="prenom" id="" placeholder="prenom.."> <br>
+</div>
+</div>
+<label class="col-form-label col-form-label-lg"> adresse</label>
+<input type="text" ngModel class="form-control form-control-lg"  name="adresse" id="" placeholder="adresse.."> <br>
+<label class="col-form-label col-form-label-lg"> Cin</label>
+<input type="text" ngModel class="form-control form-control-lg"  name="cin" id="" placeholder="cin.."> <br>
+<label class="col-form-label col-form-label-lg"> telephone</label>
+<input type="text" ngModel class="form-control form-control-lg"  name="tel" id="" placeholder="tel.."> <br>
+<button type="submit" [disabled]="addForm.invalid" class="button-88">ajouter</button>
+</form>
+</div>
+
+  </div>
+</div>
+

@@ -1,0 +1,45 @@
+<div class="bg">
+  <div class="columns">
+    <div class="login-box">
+      <div class="signin topline">
+        <div class="container">
+          <h1 class="first-name">{{ cycle.theme }}</h1>
+          <h1 class="second-name">{{ cycle.dateDebut }}</h1>
+          <div id="box">
+            <h2>  <U>A propos</U></h2>
+            <p>
+              il s'agit d'une formation de {{ cycle.theme }} <br />
+              qui s'échelonne de{{ cycle.dateDebut }} au
+              {{ cycle.dateFin }} <br />
+              et qui est fait par notre formateur (Mr/Mme)
+              {{ cycle.formateur.nom }} {{ cycle.formateur.prenom }} .<br />
+              Cet entraînement commence à {{ cycle.heureDebut }}H et dure {{ cycle.duree }}H <br />
+              chaque jour en prenant une pause de{{ cycle.pause }} minutes.
+            </p>
+            <div class="form-group row">  <div class="col-md-2">
+              <button  (click)="inscrire()"class="button-82-pushable" role="button">
+                <span class="button-82-shadow"></span>
+                <span class="button-82-edge"></span>
+                <span class="button-82-front text">
+                  s'inscrire
+                </span>
+              </button>
+              </div>
+
+             <div class="col-md-3">
+              &nbsp;
+              &nbsp;
+            <button routerLink="/home" class="button-83-pushable" >
+              <span class="button-83-shadow"></span>
+                <span class="button-83-edge"></span>
+                <span class="button-83-front text"> retour
+                </span>
+                </button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

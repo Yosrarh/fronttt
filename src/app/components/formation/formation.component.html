@@ -1,0 +1,31 @@
+
+<div class="login-box">
+  <div class="signin topline">
+    <div id="box">
+    <div>
+      <h2> les formations</h2>
+      <table class="table">
+        <thead>
+        <tr>
+          <th scope="col"> id</th>
+          <th scope="col"> theme du formation</th>
+          <th scope="col"> formateur</th>
+          <th scope="col"> N°salle </th>
+          <th scope="col"> date Debut</th>
+          <th scope="col">action</th>
+        </tr>
+        </thead>
+        <tr *ngFor="let c of Cycles">
+          <td scope="row">{{c.idCycle}}</td>
+          <td> {{c.theme}} </td>
+          <td> {{c.formateur.nom}} {{c.formateur.prenom}}</td>
+          <td> {{c.numSalle}} </td>
+          <td> {{c.dateDebut}} </td>
+          <td> <button class="button-88" [routerLink]="[c.idCycle]">consulter</button></td>
+        </tr>
+      </table>
+    </div>
+    </div>
+  </div>
+</div>
+
